@@ -92,8 +92,15 @@ body {
     align-items: center;
     background-color: var(--third-dark);
     padding: 5px;
-    border: 1px solid var(--first-dark);
+    border: 1px solid var(--first-light);
     gap: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px black;
+}
+
+.icon-link:hover {
+    background-color: var(--first-light);
+    color: var(--first-dark);
 }
 
 .icon-link img {
