@@ -1,0 +1,41 @@
+:root {
+    /* Polar Night */
+    --first-dark: #2e3440;
+    --second-dark: #3b4252;
+    --third-dark: #434c5e;
+    --fourth-dark: #4c566a;
+
+    /* Snow Storm */
+    --first-light: #d8dee9;
+    --second-light: #e5e9f0;
+    --third-light: #eceff4;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--first-dark);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.content-box {
+    display: flex;
+}
+
+#my-pic {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+}
