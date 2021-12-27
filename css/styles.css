@@ -25,7 +25,7 @@ html {
 
 body {
     /* Background color for webpage */
-    /* background-color: var(--background-dark); */
+    background-color: var(--background-dark);
     background-image: url("../media/background.jpg");
     /* Default font color for page */
     color: var(--first-light);
@@ -66,14 +66,6 @@ body {
     border: 1px solid var(--first-light);
     box-shadow: 0px 5px 10px black;
     justify-content: center;
-}
-
-@media (max-width:825px) {
-    .content-box {
-        flex-direction: column;
-        width: 80%;
-        margin: auto;
-    }
 }
 
 .content-box h2 {
@@ -146,4 +138,17 @@ body {
     border: 1px solid #d8dee9;
     margin: auto;
     flex: 1;
+}
+
+
+@media (max-width:825px) {
+    .content-box {
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+    .content-container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
