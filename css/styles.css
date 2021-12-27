@@ -35,11 +35,15 @@ body {
     box-sizing: inherit;
 }
 
+.page-container {
+    height: 95vh;
+    width: 100%;
+}
+
 .page-container,
 .content-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     gap: 15px;
 }
 
