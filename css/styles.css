@@ -1,6 +1,7 @@
 :root {
     /* Polar Night */
     --first-dark: #2e3440;
+    --first-dark-transparent: #2e3440CC;
     --second-dark: #3b4252;
     --third-dark: #434c5e;
     --fourth-dark: #4c566a;
@@ -24,8 +25,8 @@ html {
 
 body {
     /* Background color for webpage */
-    background-color: var(--background-dark);
-
+    /* background-color: var(--background-dark); */
+    background-image: url("../media/background.jpg");
     /* Default font color for page */
     color: var(--first-light);
 }
@@ -57,7 +58,7 @@ body {
 .content-box {
     display: flex;
     gap: 25px;
-    background-color: var(--first-dark);
+    background-color: var(--first-dark-transparent);
     border-radius: 25px;
     padding: 20px;
     width: 100%;
