@@ -151,4 +151,14 @@ body {
         padding-top: 50px;
         padding-bottom: 50px;
     }
+    #venmo-img {
+        width: 100%;
+        height: auto;
+    }
+    .content-box.venmo {
+        width: 100%;
+    }
+    .content-container.venmo {
+        width: 100%;
+    }
 }
