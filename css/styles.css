@@ -140,6 +140,10 @@ body {
     flex: 1;
 }
 
+.gofundme-set {
+    flex: 1;
+}
+
 
 @media (max-width:825px) {
     .content-box {
