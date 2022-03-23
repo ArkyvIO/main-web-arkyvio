@@ -124,6 +124,7 @@ body {
 .icon-link:hover {
     background-color: var(--link-orange);
     color: var(--first-dark);
+    transform: scale(1.25);
 }
 
 .icon-link img {
@@ -138,6 +139,10 @@ body {
     border: 1px solid #d8dee9;
     margin: auto;
     flex: 1;
+}
+
+#my-pic:hover {
+    transform: scale(1.1);
 }
 
 .gofundme-set {

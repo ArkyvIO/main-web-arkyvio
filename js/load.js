@@ -10,5 +10,5 @@ function makeVisible(i) {
     setTimeout(() => {
         contentBoxes[i].classList.add('visible');
         contentBoxes[i].classList.remove('hidden');
-    }, 250*i);
+    }, 500*i);
 }
