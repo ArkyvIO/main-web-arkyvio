@@ -172,3 +172,13 @@ body {
         width: 100%;
     }
 }
+
+/** Hidden and Visible Modifiers */
+.hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 2s ease-out;
+}

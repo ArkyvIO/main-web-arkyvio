@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Arkyv IO</title>
+    <script src="js/load.js"></script>
 </head>
+
 <body>
     <div class="page-container">
         <div class="content-container">
@@ -14,12 +17,16 @@
                 <img src="media/arkyvio.jpg" id="my-pic">
                 <div class="content-box-column">
                     <h2>ABOUT ME</h2>
-                    <p>My name is Michael Graves, my online handle is ArkyvIO, and I am currently enrolled in college for an associates in cyber defense, which I
-                        will then follow up with a bachelor's degree, possibly in English! I enjoy coding, web design, and writing, and am currently working on 
+                    <p>My name is Michael Graves, my online handle is ArkyvIO, and I am currently enrolled in college
+                        for an associates in cyber defense, which I
+                        will then follow up with a bachelor's degree, possibly in English! I enjoy coding, web design,
+                        and writing, and am currently working on
                         <a href="https://www.theodinproject.com/"><em>The Odin Project.</em></a>
-                    </p> 
-                    <p>You can use my links below to see the projects I am working on, and if you like my work or just want to help, feel free to buy me a coffee 
-                        (or help me pay for my tuition!) using the paypal / venmo / cashapp links below! Any and all donations are incredibly helpful, and are much
+                    </p>
+                    <p>You can use my links below to see the projects I am working on, and if you like my work or just
+                        want to help, feel free to buy me a coffee
+                        (or help me pay for my tuition!) using the paypal / venmo / cashapp links below! Any and all
+                        donations are incredibly helpful, and are much
                         appreciated!
                     </p>
                 </div>
@@ -27,22 +34,48 @@
             <div class="content-box">
                 <h2>SOCIAL LINKS</h2>
                 <ul class="horizontal-list">
-                    <a href="https://www.github.com/arkyvio"><li class="icon-link"><img src="media/github.png">GITHUB</li></a>
-                    <a href="https://www.discord.com/users/313337836503826433"><li class="icon-link"><img src="media/discord.png">DISCORD</li></a>
-                    <a href="mailto:arkyvio@gmail.com"><li class="icon-link"><img src="media/email.png">EMAIL</li></a>
-                    <a href="https://www.reddit.com/u/arkyvio"><li class="icon-link"><img src="media/reddit.png">REDDIT</li></a>
+                    <a href="https://www.github.com/arkyvio">
+                        <li class="icon-link"><img src="media/github.png">GITHUB</li>
+                    </a>
+                    <a href="https://www.discord.com/users/313337836503826433">
+                        <li class="icon-link"><img src="media/discord.png">DISCORD</li>
+                    </a>
+                    <a href="mailto:arkyvio@gmail.com">
+                        <li class="icon-link"><img src="media/email.png">EMAIL</li>
+                    </a>
+                    <a href="https://www.reddit.com/u/arkyvio">
+                        <li class="icon-link"><img src="media/reddit.png">REDDIT</li>
+                    </a>
                 </ul>
             </div>
             <div class="content-box">
                 <h2>BUY ME A COFFEE (OR TUITION)</h2>
                 <ul class="horizontal-list">
-                    <a href="https://paypal.me/mikeagraves"><li class="icon-link"><img src="media/paypal.png">PAYPAL</li></a>
-                    <a href="venmoqr.html"><li class="icon-link"><img src="media/venmo.png">VENMO</li></a>
-                    <a href="https://cash.app/$madmikegraves"><li class="icon-link"><img src="media/cashapp.png">CASHAPP</li></a>
-                    <a href="zelle.html"><li class="icon-link"><img src="media/z.png">ZELLE</li></a>
+                    <a href="https://paypal.me/mikeagraves">
+                        <li class="icon-link"><img src="media/paypal.png">PAYPAL</li>
+                    </a>
+                    <a href="venmoqr.html">
+                        <li class="icon-link"><img src="media/venmo.png">VENMO</li>
+                    </a>
+                    <a href="https://cash.app/$madmikegraves">
+                        <li class="icon-link"><img src="media/cashapp.png">CASHAPP</li>
+                    </a>
+                    <a href="zelle.html">
+                        <li class="icon-link"><img src="media/z.png">ZELLE</li>
+                    </a>
                 </ul>
             </div>
         </div>
     </div>
+    <script>
+        // Set divs to hidden until loaded
+        const contentBoxes = document.getElementsByClassName('content-box');
+
+        // Set all content-boxes to transparent until full page loaded
+        for (var i = 0; i < contentBoxes.length; i++) {
+            contentBoxes[i].classList.add('hidden');
+        }
+    </script>
 </body>
+
 </html>
