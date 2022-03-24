@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/switch.css">
     <title>Arkyv IO</title>
-    <script src="js/load.js"></script>
 </head>
-
 <body>
     <div class="page-container">
         <div class="content-container">
@@ -65,17 +63,19 @@
                     </a>
                 </ul>
             </div>
+            <div class="content-box">
+                <h2>Light Mode Switch</h2>
+                <div id="switchContainer">
+                    <label class="switch">
+                        <input class="switch-input" type="checkbox" id="lightModeSwitch" />
+                        <span class="switch-label" data-on="On" data-off="Off"></span>
+                        <span class="switch-handle"></span>
+                    </label>
+                </div>
+            </div>
         </div>
     </div>
-    <script>
-        // Set divs to hidden until loaded
-        const contentBoxes = document.getElementsByClassName('content-box');
-
-        // Set all content-boxes to transparent until full page loaded
-        for (var i = 0; i < contentBoxes.length; i++) {
-            contentBoxes[i].classList.add('hidden');
-        }
-    </script>
+    <script src="js/lightmode.js"></script>
+    <script src="js/load.js"></script>
 </body>
-
 </html>

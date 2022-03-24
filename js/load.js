@@ -1,3 +1,11 @@
+// Set divs to hidden until loaded
+const contentBoxes = document.getElementsByClassName('content-box');
+
+// Set all content-boxes to transparent until full page loaded
+for (var i = 0; i < contentBoxes.length; i++) {
+    contentBoxes[i].classList.add('hidden');
+}
+
 // Only show the content boxes once the whol DOM has loaded
 window.addEventListener('DOMContentLoaded', function () {
     for (var i = 0; i < contentBoxes.length; i++) {
@@ -10,5 +18,5 @@ function makeVisible(i) {
     setTimeout(() => {
         contentBoxes[i].classList.add('visible');
         contentBoxes[i].classList.remove('hidden');
-    }, 250*i);
+    }, 500*i);
 }
