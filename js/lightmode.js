@@ -40,7 +40,7 @@ function setLightMode() {
     } else if (lightmode == 'true') {
         lightmode = 'false';
         localStorage.setItem("lightmodeKey", lightmode);
-        r.style.setProperty('--first-dark-transparent', '2e3440cc');
+        r.style.setProperty('--first-dark-transparent', '#2e3440cc');
         r.style.setProperty('--first-dark', '#2e3440');
         r.style.setProperty('--second-dark', '#3b4252');
         r.style.setProperty('--third-dark', '#434c5e');
